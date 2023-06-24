@@ -1,0 +1,6 @@
+CALL QSYS2.IFS_WRITE(
+    PATH_NAME =>'/home/{uesr_profile|/.ssh/authorized_keys', 
+    LINE => 'ssh-rsa [...]== user@device', 
+    OVERWRITE => 'APPEND', 
+    END_OF_LINE => 'NONE'
+);
